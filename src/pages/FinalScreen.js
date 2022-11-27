@@ -18,9 +18,7 @@ const FinalScreen = () => {
 
     history.push('/')
   }
-
   return (
-
     <Box>
       <Typography variant="h2" fontWeight={'bold'}>Final Score : {Math.floor(((score*100)/count_of_question))}%</Typography>
       <Typography variant="h5">You marked {score} correct answers out of {count_of_question} questions</Typography>

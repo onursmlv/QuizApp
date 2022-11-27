@@ -4,7 +4,7 @@ const initialState={
     question_category:"",
     question_difficulty:"",
     question_type:"",
-    count_of_question:50,
+    count_of_question:10,
     score:0
 }
 const reducer = (   state= initialState, action    ) => {
@@ -38,5 +38,4 @@ const reducer = (   state= initialState, action    ) => {
             return state;
     }
 }
-
 export default reducer;

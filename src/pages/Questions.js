@@ -18,9 +18,11 @@ const Questions = () => {
         question_category,
         count_of_question,
         score
-    } =useSelector((state)=>state)
+    }=useSelector((state)=>state);
+
     const history=useHistory();
     const dispatch = useDispatch();
+
     let apiUrl=`/api.php?amount=${count_of_question}`;
     if(question_category){
         apiUrl=apiUrl.concat(`&category=${question_category}`)
@@ -50,6 +52,7 @@ const Questions = () => {
         }
 
     },[response, questionIndex])
+
     if(loading){
         return (
             <Box>
@@ -59,7 +62,6 @@ const Questions = () => {
     }
     const handleClickAnswer = (e) => {
         const question = response.results[questionIndex];
-
 
         if (e.target.textContent === question.correct_answer) {
           dispatch(handleScoreChange(score + 1));   
