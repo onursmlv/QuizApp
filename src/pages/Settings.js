@@ -27,7 +27,7 @@ const Settings = () => {
 
     const difficultyOption=[
         {id:"easy", name :"Easy"},
-        {id:"normal",name :"Normal"},
+        {id:"normal",name :"Medium"},
         {id:"hard",name :"Hard" }
     ];
 
